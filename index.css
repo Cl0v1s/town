@@ -1,0 +1,104 @@
+@font-face {
+    font-family: font-secondary;
+    src: url(./FinkHeavy.otf);
+}
+
+
+:root {
+    --black: black;
+    --white: white;
+
+    --font-primary: sans-serif;
+    --font-secondary: font-secondary;
+
+    --spacing-50: 10px;
+    --spacing-100: 20px;
+    --spacing-200: 40px;
+
+    --brand-primary: #82dab1;
+}
+
+body {
+    background: var(--black);
+    color: var(--white);
+
+    display: flex;
+    padding: var(--spacing-100);
+
+    font-family: var(--font-primary);
+    letter-spacing: 1px;
+}
+
+hr {
+    height: 0;
+    border-width: 0.5px;
+    border-bottom-width: 0.5px;
+    border-color: rgba(255, 255, 255, 0.2);
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+    border-bottom: 0;
+}
+
+a {
+    color: var(--white);
+}
+
+a:hover {
+    color: var(--brand-primary);
+}
+
+section {
+    display: block;
+    margin: auto;
+    text-align: left;
+    margin-top: var(--spacing-200);
+}
+
+#illustration {
+    max-width: 300px;
+    max-height: 660px;
+    filter: grayscale(100%);
+    flex-shrink: 0;
+}
+
+.content {
+    flex-grow: 1;
+    text-align: right;
+}
+
+h1 div {
+    font-size: 50px;
+    font-family: var(--font-primary);
+    text-align: right;
+    line-height: 25px;
+
+}
+
+h1 span {
+    font-size: 24px;
+    font-family: var(--font-secondary);
+    letter-spacing: 3px;
+    color: var(--brand-primary);
+}
+
+ul {
+    margin: 0;
+    display: inline-block;
+    text-align: left;
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-top: var(--spacing-50);
+}
+
+ul li img {
+    width: 20px;
+    filter: grayscale(100%);
+    vertical-align: middle;
+    margin-right: var(--spacing-50);
+}
+
+ul li:last-of-type img {
+    filter: invert(100%);
+}
